@@ -1,0 +1,7 @@
+:root {
+    --border-radius-6: 80px;
+}
+.rounded-top-6 {
+    border-top-left-radius: var(--border-radius-6);
+    border-top-right-radius: var(--border-radius-6);
+}
