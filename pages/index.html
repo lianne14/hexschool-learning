@@ -11,12 +11,12 @@
   <body>
     <%- include('./layout/header'); -%>
     <!-- banner -->
-    <section class="container position-relative my-5">
+    <section class="container-fluid py-4 py-lg-10" style="max-width: 1656px;">
+    <div class="position-relative">
       <picture>
-        <img src="../assets/images/hero-2.png" alt="banner" class="img-fluid h-auto">
+        <img src="../assets/images/hero-2.png" alt="banner" class="img-fluid object-fit-cover rounded-5" style=" min-height: 480px;">
       </picture>
-
-      <div class="position-absolute bottom-0">
+      <div class="position-absolute bottom-0 start-0">
         <div class="d-flex flex-column align-items-start">
         <!-- badge -->
         <h6 class="fw-bold bg-light p-3 mb-4 rounded-pill ms-4">
@@ -24,13 +24,14 @@
             給成人的鋼琴入門課，一小時教你彈奏上手！
         </h6>
         <!-- tittle link -->
-        <button class="btn bg-primary btn-lg text-light align-middle rounded-0" type="button">
-          <h2>探索感興趣的課程，今天立即上課
+        <button class="btn bg-primary btn-lg text-light rounded-top-8" type="button">
+          <h2 class="fs-6 fs-lg-1">探索感興趣的課程，今天立即上課
             <i class="bi bi-arrow-right"></i>
           </h2>
         </button>
       </div>
       </div>
+    </div>
     </section>
     <!-- #Block 02 火熱募資課程 -->
     <section class="my-12">
@@ -38,12 +39,12 @@
         <div class="row my-5">
           <div class="col-12 col-lg-4">
             <!-- tittle -->
-            <div style="margin-top: 160px;">
+            <div class="mt-0 mt-lg-12">
               <h2 class="fs-1 position-relative">火熱募資課程
                 <!-- flower Ｑuestion rwd沒變小--> 
                 <picture>
                   <source srcset="../assets/images/deco/flower-2.png" media="(max-width: 996px)" type="image/svg+xml" style="width: 200px; transform: scale(0.5);">
-                  <img src="../assets/images/deco/flower-2.png" alt="" class="position-absolute start-0 translate-middle z-n1">
+                  <img src="../assets/images/deco/flower-2.png" alt="deco-flower" class="position-absolute start-0 translate-middle z-n1">
                 </picture>
               </h2>
               <p class="text-neutral-80">現在購買最優惠✨</p>
@@ -235,7 +236,7 @@
           <!-- card 01 創意寫作工坊：從靈感到出版的全過程 -->
           <div class="col">
             <div class="card h-100 rounded-4 shadow-sm">
-              <img src="../assets/images/course-4.png" alt="class-draw" class="img-fluid w-100 rounded-top-4">
+              <img src="../assets/images/course-4.png" alt="class-create" class="img-fluid w-100 rounded-top-4">
               <div class="card-title px-3 my-3">
                 <h5 class="fw-bold">創意寫作工坊：從靈感到出版的全過程</h5>
               </div>
@@ -270,7 +271,7 @@
           <!-- card 02 小白也會！從零開始學習 Python 程式設計 -->
           <div class="col">
             <div class="card h-100 rounded-4 shadow-sm">
-              <img src="../assets/images/course-5.png" alt="class-draw" class="img-fluid w-100 rounded-top-4">
+              <img src="../assets/images/course-5.png" alt="class-Python" class="img-fluid w-100 rounded-top-4">
               <div class="card-title px-3 my-3">
                 <h5 class="fw-bold">小白也會！從零開始學習 Python 程式設計</h5>
               </div>
@@ -305,7 +306,7 @@
           <!-- card 03 全面掌握 JavaScript 開發技術 -->
           <div class="col">
             <div class="card h-100 rounded-4 shadow-sm">
-              <img src="../assets/images/course-6.png" alt="class-draw" class="img-fluid w-100 rounded-top-4">
+              <img src="../assets/images/course-6.png" alt="class-JavaScript" class="img-fluid w-100 rounded-top-4">
               <div class="card-title px-3 my-3">
                 <h5 class="fw-bold">全面掌握 JavaScript 開發技術</h5>
               </div>
@@ -340,7 +341,7 @@
           <!-- card 04 HTML & CSS 網頁設計基礎教程 -->
           <div class="col">
             <div class="card h-100 rounded-4 shadow-sm">
-              <img src="../assets/images/course-7.png" alt="class-draw" class="img-fluid w-100 rounded-top-4">
+              <img src="../assets/images/course-7.png" alt="class-HTML & CSS" class="img-fluid w-100 rounded-top-4">
               <div class="card-title px-3 my-3">
                 <h5 class="fw-bold">HTML & CSS 網頁設計基礎教程</h5>
               </div>
@@ -372,10 +373,10 @@
               </div>
             </div>
           </div>
-          <!-- card 05 HTML & CSS 網頁設計基礎教程 -->
+          <!-- card 05 更進一步！深入學習 Node.js 與後端開發 -->
           <div class="col">
             <div class="card h-100 rounded-4 shadow-sm">
-              <img src="../assets/images/course-8.png" alt="class-draw" class="img-fluid w-100 rounded-top-4">
+              <img src="../assets/images/course-8.png" alt="class-Node.js" class="img-fluid w-100 rounded-top-4">
               <div class="card-title px-3 my-3">
                 <h5 class="fw-bold">更進一步！深入學習 Node.js 與後端開發</h5>
               </div>
@@ -412,7 +413,7 @@
     </section>
     <!-- #Block 04 想學什麼嗎？一探究竟。 -->
     <section class="my-12">
-      <div class="container" style="max-width: 1656px;">
+      <div class="container-fluid" style="max-width: 1656px;">
         <!-- blue board -->
         <div class="bg-primary rounded-5">
           <div class="row flex-row-reverse align-items-center py-10">
@@ -658,7 +659,7 @@
       </div>
     </section>
     <!-- #Block 05 頂尖講師帶你飛 -->
-    <section class="my-12 pb-12">
+    <section class="my-12">
       <div class="container">
         <!-- tittle -->
         <div class="text-center">
@@ -669,69 +670,133 @@
           </div>
         </div>
       <!-- teacher card -->
-      <div class="container">
-      <ul class="row list-unstyled g-8">
-        <li class="col-12 col-lg-4">
-          <div class="card position-relative">
-            <picture>
-              <img src="../assets/images/teacher-3.png" alt="" class="w-100 z-n1 object-fit-cover">
-            </picture>
-            <div class="card-body bg-light shadow-lg rounded-4 position-absolute top-100 end-0 translate-middle-y w-100 me-4">
-              <h5 class="card-tittle py-5 fw-bold">
-                Mr. Robert 
-              </h5>
-              <!-- card-badge -->
-              <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3 mb-2 me-2">音樂創作</small>
-              <i class="bi bi-star-fill text-warning"></i>
-              <small>4.0<span class="text-neutral-60"> (333)</span></small>
-              <p class="ms-2">Robert 的線上課程深受學生喜愛。他的教學方法生動有趣，能夠深入淺出地講解複雜的音樂理論，並結合實際演奏技巧，使學生能夠快速進步。</p>
-              <div class="card-footer bg-light">
-                <button class="btn btn-lg btn-primary text-light w-100 fs-6 my-5">探索 Mr. Robert 的教學課程</button>
+      <div class="container d-none d-lg-block">
+        <div class="row row-cols-1 row-cols-md-3 g-2 py-10">
+          <!-- teacher01 Mr. Robert  -->
+          <div class="col">
+            <div class="card mx-auto" style="max-width: 416px;">
+              <img src="../assets/images/teacher-3.png" class="card-img-top w-auto object-fit-cover ms-10" alt="...">
+              <div class="card-body w-auto bg-light rounded-4 shadow-lg me-6 z-1" style="margin-top: -80px; max-width: 384px;">
+                <h5 class="card-tittle py-5 fw-bold">
+                  Mr. Robert 
+                </h5>
+                <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3 mb-2 me-2">音樂創作</small>
+                <i class="bi bi-star-fill text-warning"></i>
+                <small>4.0<span class="text-neutral-60"> (333)</span></small>
+                <p class="ms-2">Robert 的線上課程深受學生喜愛。他的教學方法生動有趣，能夠深入淺出地講解複雜的音樂理論，並結合實際演奏技巧，使學生能夠快速進步。</p>
+                <div class="card-footer bg-light mt-auto">
+                  <button class="btn btn-lg btn-primary text-light w-100 fs-6 my-5">探索 Mr. Robert 的教學課程</button>
+                </div>
               </div>
             </div>
           </div>
-        </li>
-        <li class="col-12 col-lg-4">
-          <div class="card position-relative">
-            <picture>
-              <img src="../assets/images/teacher-3.png" alt="" class="w-100 z-n1 object-fit-cover">
-            </picture>
-            <div class="card-body bg-light shadow-lg rounded-4 position-absolute top-100 end-0 translate-middle-y w-100 me-4">
-              <h5 class="card-tittle py-5 fw-bold">
-                Mr. Robert 
-              </h5>
-              <!-- card-badge -->
-              <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3 mb-2 me-2">音樂創作</small>
-              <i class="bi bi-star-fill text-warning"></i>
-              <small>4.0<span class="text-neutral-60"> (333)</span></small>
-              <p class="ms-2">Robert 的線上課程深受學生喜愛。他的教學方法生動有趣，能夠深入淺出地講解複雜的音樂理論，並結合實際演奏技巧，使學生能夠快速進步。</p>
-              <div class="card-footer bg-light">
-                <button class="btn btn-lg btn-primary text-light w-100 fs-6 my-5">探索 Mr. Robert 的教學課程</button>
+          <!-- teacher02 Kelly Beck  -->
+          <div class="col">
+            <div class="card mx-auto h-100" style="max-width: 416px;">
+              <img src="../assets/images/teacher-1.png" class="card-img-top bg-none w-auto object-fit-cover ms-10" alt="...">
+              <div class="card-body w-auto bg-light rounded-4 shadow-lg me-6 z-1" style="margin-top: -80px; max-width: 384px;">
+                <h5 class="card-tittle py-5 fw-bold">
+                  Kelly Beck
+                </h5>
+                <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3 mb-2 me-2">英文寫作</small>
+                <i class="bi bi-star-fill text-warning"></i>
+                <small>4.0<span class="text-neutral-60"> (281)</span></small>
+                <p class="ms-2">Kelly 的教學方式靈活且富有創意，能夠有效提升學生的寫作技巧和自信心。Kelly 注重實用性，針對學生的需求量身打造教學內容，並提供具體的反饋和建議。</p>
+                <div class="card-footer bg-light mt-auto">
+                  <button class="btn btn-lg btn-primary text-light w-100 fs-6 my-5">探索 Kelly Beck 的教學課程</button>
+                </div>
               </div>
             </div>
           </div>
-        </li>
-        <li class="col-12 col-lg-4">
-          <div class="card position-relative">
-            <picture>
-              <img src="../assets/images/teacher-3.png" alt="" class="w-100 z-n1 object-fit-cover">
-            </picture>
-            <div class="card-body bg-light shadow-lg rounded-4 position-absolute top-100 end-0 translate-middle-y w-100 me-4">
-              <h5 class="card-tittle py-5 fw-bold">
-                Mr. Robert 
-              </h5>
-              <!-- card-badge -->
-              <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3 mb-2 me-2">音樂創作</small>
-              <i class="bi bi-star-fill text-warning"></i>
-              <small>4.0<span class="text-neutral-60"> (333)</span></small>
-              <p class="ms-2">Robert 的線上課程深受學生喜愛。他的教學方法生動有趣，能夠深入淺出地講解複雜的音樂理論，並結合實際演奏技巧，使學生能夠快速進步。</p>
-              <div class="card-footer bg-light">
-                <button class="btn btn-lg btn-primary text-light w-100 fs-6 my-5">探索 Mr. Robert 的教學課程</button>
+          <!-- teacher03 K. Lee  -->
+          <div class="col">
+            <div class="card mx-auto h-100" style="max-width: 416px;">
+              <img src="../assets/images/teacher-2.png" class="card-img-top bg-none w-auto object-fit-cover ms-10" alt="...">
+              <div class="card-body w-auto bg-light rounded-4 shadow-lg me-6 d-flex flex-column" style="margin-top: -80px; max-width: 384px;">
+                <h5 class="card-tittle py-5 fw-bold">
+                  K. Lee 
+                </h5>
+                <div>
+                  <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3 mb-2 me-2">音樂創作</small>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <small>4.0<span class="text-neutral-60"> (1,245)</span></small>
+                </div>
+                <p class="ms-2">K. Lee 的教學風格親切且耐心，能夠循序漸進地引導學生進入樂團的世界。學生們紛紛表示，K. Lee 的課程讓他們對音樂產生了濃厚的興趣！</p>
+                <div class="card-footer bg-light mt-auto">
+                  <button class="btn btn-lg btn-primary text-light w-100 fs-6 my-5">探索 K. Lee 的教學課程</button>
+                </div>
               </div>
             </div>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
+      <!-- teacher-swiper -->
+      <div class="container d-block d-lg-none overflow-hidden">
+        <div class="row g-4 py-10">
+          <div class="swiper-container-3"> 
+            <div class="swiper-wrapper"> 
+              <div class="swiper-slide">
+                <div class="col">
+                  <div class="card mx-auto" style="max-width: 416px;">
+                    <img src="../assets/images/teacher-3.png" class="card-img-top w-auto object-fit-cover ms-10" alt="...">
+                    <div class="card-body w-auto bg-light rounded-4 shadow-lg me-6 z-1" style="margin-top: -80px; max-width: 384px;">
+                      <h5 class="card-tittle py-5 fw-bold">
+                        Mr. Robert 
+                      </h5>
+                      <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3 mb-2 me-2">音樂創作</small>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <small>4.0<span class="text-neutral-60"> (333)</span></small>
+                      <p class="ms-2">Robert 的線上課程深受學生喜愛。他的教學方法生動有趣，能夠深入淺出地講解複雜的音樂理論，並結合實際演奏技巧，使學生能夠快速進步。</p>
+                      <div class="card-footer bg-light mt-auto">
+                        <button class="btn btn-lg btn-primary text-light w-100 fs-6 my-5">探索 Mr. Robert 的教學課程</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col">
+                  <div class="card mx-auto h-100" style="max-width: 416px;">
+                    <img src="../assets/images/teacher-1.png" class="card-img-top bg-none w-auto object-fit-cover ms-10" alt="...">
+                    <div class="card-body w-auto bg-light rounded-4 shadow-lg me-6 z-1" style="margin-top: -80px; max-width: 384px;">
+                      <h5 class="card-tittle py-5 fw-bold">
+                        Kelly Beck
+                      </h5>
+                      <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3 mb-2 me-2">英文寫作</small>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <small>4.0<span class="text-neutral-60"> (281)</span></small>
+                      <p class="ms-2">Kelly 的教學方式靈活且富有創意，能夠有效提升學生的寫作技巧和自信心。Kelly 注重實用性，針對學生的需求量身打造教學內容，並提供具體的反饋和建議。</p>
+                      <div class="card-footer bg-light mt-auto">
+                        <button class="btn btn-lg btn-primary text-light w-100 fs-6 my-5">探索 Kelly Beck 的教學課程</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col">
+                  <div class="card mx-auto h-100" style="max-width: 416px;">
+                    <img src="../assets/images/teacher-2.png" class="card-img-top bg-none w-auto object-fit-cover ms-10" alt="...">
+                    <div class="card-body w-auto bg-light rounded-4 shadow-lg me-6 d-flex flex-column" style="margin-top: -80px; max-width: 384px;">
+                      <h5 class="card-tittle py-5 fw-bold">
+                        K. Lee 
+                      </h5>
+                      <div>
+                        <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3 mb-2 me-2">音樂創作</small>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <small>4.0<span class="text-neutral-60"> (1,245)</span></small>
+                      </div>
+                      <p class="ms-2">K. Lee 的教學風格親切且耐心，能夠循序漸進地引導學生進入樂團的世界。學生們紛紛表示，K. Lee 的課程讓他們對音樂產生了濃厚的興趣！</p>
+                      <div class="card-footer bg-light mt-auto">
+                        <button class="btn btn-lg btn-primary text-light w-100 fs-6 my-5">探索 K. Lee 的教學課程</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -785,6 +850,24 @@
             rows: 2,  // 兩欄 row
             fill: "row", //row 橫 // column 直
             }
+          }
+        }
+      });
+    </script>
+
+    <!-- #Block 05 頂尖講師帶你飛 -->
+    <script>
+      const swiper3 = new Swiper(".swiper-container-3", {
+        slidesPerView: 1, //768以下 一張
+        spaceBetween: 24, //隔 24px
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true, 
+        },
+        breakpoints: { // 響應式設置
+          768: {
+            slidesPerView: 1.5, // 在大於等於 768px 的設備上顯示 2 個滑塊
+            spaceBetween: 8, // 滑塊之間的間距
           }
         }
       });
