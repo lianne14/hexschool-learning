@@ -42,6 +42,8 @@ git add .
 git commit -m 'first commit'
 git branch -M main
 git remote add origin https://github.com/lianne14/hexschool-learning.git
+git remote remove origin
+git remote set-url origin https://github.com/lianne14/hexschool-learning.git
 git push -u origin main // 僅限第一次輸入，往後只需要輸入 git push
 ```
 
