@@ -1,0 +1,16 @@
+.sewiperbanner{
+  .swiper-slide {
+    opacity: 0.5; 
+  }
+  .swiper-slide-active {
+    opacity: 1; 
+  }
+}
+
+.swiper-container-4{
+  .swiper-wrapper{
+    display: flex;
+    align-items: stretch;
+    align-self: stretch;
+  }
+}
