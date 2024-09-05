@@ -4,6 +4,22 @@
 @import "./configuration/variables-dark";
 @import "./configuration/custom-colors";
 
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/maps";
+// @import "bootstrap/scss/utilities";
+
+// $utilities: map-merge(
+//   $utilities, (
+//     "font-size": map-merge(
+//       map-get($utilities, "font-size"),
+//       ( responsive: true ),
+//     ),
+//   )
+// );
+
+// @import "bootstrap/scss/utilities/api";
+
+
 @import "./components/rounded";
 
 
