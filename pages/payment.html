@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <section class="container">
+      <div class="row bg-light">
+        <div class="col-12 col-lg-6 mx-auto p-10 justify-content-center">
+          <div class="d-flex align-items-center">
+            <div>
+            <i class="bi bi-check2 text-light bg-success fs-4 rounded-circle p-2 w-auto h-auto me-7"></i>
+            </div>
+            <h1 class="fw-bold">
+              恭喜，Jessica！<br>
+              您已購買完成
+            </h1>
+          </div>
+          <p>感謝您在 Learning 購買了課程，我們已將訂單相關資訊發送至您的電子信箱。</p>
+          <div class="row">
+          <div class="col-12 col-lg-6">
+            <button type="button" class="btn btn-outline-primary w-100">立即前往上課</button>
+          </div>
+          <div class="col-12 col-lg-6">
+            <button type="button" class="btn btn-primary w-100">查看訂單記錄</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <!-- tittle -->
+      <div class="">
+        <div class="d-flex">
+          <picture>
+            <img src="../assets/images/deco/flower-5.png" alt="deco-flower" style="width: 24px; height: auto;">
+          </picture>
+          <h4 class="position-relative">更多程式學習相關課程</h4>
+        </div>
+      </div>
+
+      <!-- swiper -->
+      <div class="row overflow-hidden">
+        <div class="swiper-container-4">
+          <div class="swiper-wrapper h-auto d-flex align-items-stretch">
+            <!-- card 01 創意寫作工坊：從靈感到出版的全過程 -->
+            <div class="swiper-slide" style="min-height: 500px;">
+              <div class="col h-100">
+                <div class="card rounded-4 shadow-sm">
+                  <img src="../assets/images/course-4.png" alt="class-create" class="img-fluid w-100 rounded-top-4">
+                  <div class="card-title px-3 my-3">
+                    <h5 class="fw-bold">創意寫作工坊：從靈感到出版的全過程</h5>
+                  </div>
+                  <div class="card-body d-flex align-items-center py-0 mb-3">
+                      <img src="../assets/images/avatar-2-1.png" alt="Kelly Hsu-img" class="rounded-circle object-fit-cover me-2" style="width: 44px; height: 44px;">
+                        <span class="text-neutral-80">Kelly Hsu</span>
+                        
+                        <!-- price -->
+                        <div class="ms-auto text-end">
+                            <h5 class="mb-0 fw-bold text-primary">
+                              NT$ 2,480 
+                            </h5>
+                            <small class="text-neutral-60"><s>NT$ 3,200</s></small>
+                        </div>
+                    </div>
+                  <hr class="p-0 m-0">
+                  <div class="card-footer px-3 my-3">
+                    <div class="d-flex align-items-center">
+                    <div>
+                      <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3">中文創作</small>
+                      <br>
+                      <small class="ms-2">已有 420 位同學加入</small>
+                    </div>
+                    <div class="ms-auto">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <small>4.0<span class="text-neutral-60"> (333)</span></small>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 02 小白也會！從零開始學習 Python 程式設計 -->
+            <div class="swiper-slide" style="min-height: 500px;">
+              <div class="col h-100">
+                <div class="card rounded-4 shadow-sm">
+                  <img src="../assets/images/course-5.png" alt="class-Python" class="img-fluid w-100 rounded-top-4">
+                  <div class="card-title px-3 my-3">
+                    <h5 class="fw-bold">小白也會！從零開始學習 Python 程式設計</h5>
+                  </div>
+                  <div class="card-body d-flex align-items-center py-0 mb-3">
+                      <img src="../assets/images/avatar-2-1.png" alt="Kelly Hsu-img" class="rounded-circle object-fit-cover me-2" style="width: 44px; height: 44px;">
+                        <span class="text-neutral-80">Kelly Hsu</span>
+                        
+                        <!-- price -->
+                        <div class="ms-auto text-end">
+                            <h5 class="mb-0 fw-bold text-primary">
+                              NT$ 2,480 
+                            </h5>
+                            <small class="text-neutral-60"><s>NT$ 3,200</s></small>
+                        </div>
+                    </div>
+                  <hr class="p-0 m-0">
+                  <div class="card-footer px-3 my-3">
+                    <div class="d-flex align-items-center">
+                    <div>
+                      <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3">中文創作</small>
+                      <br>
+                      <small class="ms-2">已有 420 位同學加入</small>
+                    </div>
+                    <div class="ms-auto">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <small>4.0<span class="text-neutral-60"> (333)</span></small>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 03 全面掌握 JavaScript 開發技術 -->
+            <div class="swiper-slide" style="min-height: 500px;">
+              <div class="col h-100">
+                <div class="card rounded-4 shadow-sm">
+                  <img src="../assets/images/course-6.png" alt="class-JavaScript" class="img-fluid w-100 rounded-top-4">
+                  <div class="card-title px-3 my-3">
+                    <h5 class="fw-bold">全面掌握 JavaScript 開發技術</h5>
+                  </div>
+                  <div class="card-body d-flex align-items-center py-0 mb-3">
+                      <img src="../assets/images/avatar-2-1.png" alt="Kelly Hsu-img" class="rounded-circle object-fit-cover me-2" style="width: 44px; height: 44px;">
+                        <span class="text-neutral-80">Kelly Hsu</span>
+                        
+                        <!-- price -->
+                        <div class="ms-auto text-end">
+                            <h5 class="mb-0 fw-bold text-primary">
+                              NT$ 2,480 
+                            </h5>
+                            <small class="text-neutral-60"><s>NT$ 3,200</s></small>
+                        </div>
+                    </div>
+                  <hr class="p-0 m-0">
+                  <div class="card-footer px-3 my-3">
+                    <div class="d-flex align-items-center">
+                    <div>
+                      <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3">中文創作</small>
+                      <br>
+                      <small class="ms-2">已有 420 位同學加入</small>
+                    </div>
+                    <div class="ms-auto">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <small>4.0<span class="text-neutral-60"> (333)</span></small>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 04 HTML & CSS 網頁設計基礎教程 -->
+            <div class="swiper-slide" style="min-height: 500px;">
+              <div class="col h-100">
+                <div class="card rounded-4 shadow-sm">
+                  <img src="../assets/images/course-7.png" alt="class-HTML & CSS" class="img-fluid w-100 rounded-top-4">
+                  <div class="card-title px-3 my-3">
+                    <h5 class="fw-bold">HTML & CSS 網頁設計基礎教程</h5>
+                  </div>
+                  <div class="card-body d-flex align-items-center py-0 mb-3">
+                      <img src="../assets/images/avatar-2-1.png" alt="Kelly Hsu-img" class="rounded-circle object-fit-cover me-2" style="width: 44px; height: 44px;">
+                        <span class="text-neutral-80">Kelly Hsu</span>
+                        
+                        <!-- price -->
+                        <div class="ms-auto text-end">
+                            <h5 class="mb-0 fw-bold text-primary">
+                              NT$ 2,480 
+                            </h5>
+                            <small class="text-neutral-60"><s>NT$ 3,200</s></small>
+                        </div>
+                    </div>
+                  <hr class="p-0 m-0">
+                  <div class="card-footer px-3 my-3">
+                    <div class="d-flex align-items-center">
+                    <div>
+                      <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3">中文創作</small>
+                      <br>
+                      <small class="ms-2">已有 420 位同學加入</small>
+                    </div>
+                    <div class="ms-auto">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <small>4.0<span class="text-neutral-60"> (333)</span></small>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    
+
+
+    <%- include('./layout/footer'); -%>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- #Block 03 看看大家都買了什麼 -->  
+    <script>
+      var swiper4 = new Swiper(".swiper-container-4", {
+        slidesPerView: "auto",
+        centeredSlides: false,
+        spaceBetween: 30,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        breakpoints: { // 響應式設置
+          320: {
+          slidesPerView: 1.5, // 手機版顯示 1 張
+          },
+          768: {
+            slidesPerView: 3.5, // 在大於等於 768px 的設備上顯示 2 個滑塊
+          }
+        }
+      });
+    </script>
+    
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

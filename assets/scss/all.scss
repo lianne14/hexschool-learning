@@ -6,18 +6,27 @@
 
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/maps";
-// @import "bootstrap/scss/utilities";
+@import "bootstrap/scss/utilities";
 
-// $utilities: map-merge(
-//   $utilities, (
-//     "font-size": map-merge(
-//       map-get($utilities, "font-size"),
-//       ( responsive: true ),
-//     ),
-//   )
-// );
+$utilities: map-merge(
+  $utilities, (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+  )
+);
 
-// @import "bootstrap/scss/utilities/api";
+$utilities: map-merge(
+  $utilities, (
+    "rounded": map-merge(
+      map-get($utilities, "rounded"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+@import "bootstrap/scss/utilities/api";
 
 
 @import "./components/rounded";
