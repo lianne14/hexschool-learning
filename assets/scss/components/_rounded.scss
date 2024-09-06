@@ -1,7 +1,23 @@
 :root {
     --border-radius-6: 80px;
 }
+.rounded-6{
+    border-radius: var(--border-radius-6);
+    @media (max-width: 768px) {
+        border-radius: var(--border-radius-0);
+    }
+}
 .rounded-top-6 {
     border-top-left-radius: var(--border-radius-6);
     border-top-right-radius: var(--border-radius-6);
+}
+button.btn.rounded-custom-6 {
+    border-top-left-radius: var(--border-radius-0); 
+    border-top-right-radius: var(--border-radius-6); 
+    border-bottom-left-radius: var(--border-radius-6); 
+    border-bottom-right-radius: var(--border-radius-0);
+
+    @media (max-width: 768px) {
+        border-radius: var(--border-radius-0);
+    }
 }
