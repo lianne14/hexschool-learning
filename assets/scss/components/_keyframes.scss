@@ -1,0 +1,67 @@
+@keyframes progress-xl{
+    0%{
+    right: 100%;
+    }
+    50%{
+    right: 20%;
+    }
+    100%{
+    right: 18%;
+    }
+}
+
+.progress-container {
+    position: relative; 
+    width: 100%; 
+  }
+  
+.progress-animation-xl {
+    position: absolute;
+    height: 100%; 
+    animation-name: progress-xl; 
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+@keyframes progress-full{
+    0%{
+    right: 100%;
+    }
+    50%{
+    right: 20%;
+    }
+    100%{
+    right: 0%;
+    }
+}
+  
+.progress-animation-full {
+    position: absolute;
+    height: 100%; 
+    animation-name: progress-full; 
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+@keyframes progress-l{
+    0%{
+    right: 100%;
+    }
+    50%{
+    right: 40%;
+    }
+    100%{
+    right: 27%;
+    }
+}
+  
+.progress-animation-l {
+    position: absolute;
+    height: 100%; 
+    animation-name: progress-l; 
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
