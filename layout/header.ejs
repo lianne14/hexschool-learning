@@ -72,10 +72,35 @@
             <button type="button" class="btn btn-primary me-2 d-none d-lg-block"><a href="#"></a>登入 / 註冊</button>
 
             <!-- rwd navbar-toggler -->
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="d-block d-lg-none">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <div class="offcanvas offcanvas-end pt-3" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header border-bottom border-1 position-relative">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">探索全部</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    <ul class="list-unstyled">
+                        <li class="dropend"><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#" data-bs-toggle="dropdown">音樂<i class="bi bi-chevron-right ms-auto"></i></a>
+                        </li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">攝影<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">程式<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">藝術<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">人文<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">行銷<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">投資理財<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">心靈成長<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">職場技能<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">生活品味<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-primary me-2 w-100 position-sticky"><a href="#"></a>登入 / 註冊</button>
+                </div>
+              </div>
+            </div>  
       </div>
       </div>
     </nav>

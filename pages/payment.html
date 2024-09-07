@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Learning</title>
   </head>
   <body>
@@ -14,7 +16,7 @@
         <div class="col-12 col-lg-6 mx-auto p-10 justify-content-center">
           <div class="d-flex align-items-center">
             <div>
-            <i class="bi bi-check2 text-light bg-success fs-4 rounded-circle p-2 w-auto h-auto me-7"></i>
+            <i class="bi bi-check2 text-light bg-success fs-4 rounded-circle p-1 px-2 w-auto h-auto me-4"></i>
             </div>
             <h1 class="fw-bold">
               恭喜，Jessica！<br>
@@ -34,7 +36,7 @@
       </div>
     </section>
 
-    <section class="container">
+    <section class="container my-4">
       <!-- tittle -->
       <div class="d-flex">
         <picture>
@@ -42,7 +44,6 @@
         </picture>
         <h4 class="position-relative">更多程式學習相關課程</h4>
       </div>
-
       <!-- swiper -->
       <div class="overflow-hidden">
         <div class="swiper-container-4" style="min-height: 550px;">
@@ -208,22 +209,20 @@
     <!-- #Block 03 看看大家都買了什麼 -->  
     <script>
       var swiper4 = new Swiper(".swiper-container-4", {
-        slidesPerView: "auto",
+        slidesPerView: "1",
         spaceBetween: 30,
-        pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        },
         breakpoints: { // 響應式設置
-          320: {
-          slidesPerView: 1, // 手機版顯示 1 張
-          },
-          768: {
+          640: {
             slidesPerView: 1.5, // 在大於等於 768px 的設備上顯示 2 個滑塊
+          },
+
+          1024: {
+            slidesPerView: 3.5, // 在大於等於 768px 的設備上顯示 2 個滑塊
           }
         }
       });
-    </script>    
+    </script>
+     
     
     <script type="module" src="../main.js"></script>
   </body>
