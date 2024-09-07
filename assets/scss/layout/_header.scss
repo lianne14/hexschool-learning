@@ -3,3 +3,22 @@
     box-shadow: none;
     border-color: transparent;
 }
+.group {
+    min-width: 208px;
+}
+.first {
+    width: 232px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* 自訂滾動條寬度和樣式 */
+.first::-webkit-scrollbar {
+    width: 4px; /* 設定 Y 軸滾動條寬度 */
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+}
+.first::-webkit-scrollbar-thumb {
+    background-color:  #e1e1e1 ; /* 設定滾動條顏色 */
+    border-radius: 10px; /* 設定滾動條圓角 */
+}

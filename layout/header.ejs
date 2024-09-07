@@ -1,7 +1,7 @@
-<div class="container mt-4">
-    <nav class="navbar navbar-expand-lg shadow-lg rounded-pill">
+<div class="container mt-1 mt-lg-4">
+    <nav class="navbar navbar-expand-lg shadow-none shadow-lg-lg rounded-0 rounded-lg-pill">
     <div class="container-fluid">
-        <div class="d-flex align-items-center w-100">
+        <div class="d-flex align-items-center w-100 py-2">
             <!-- logo -->
             <a class="navbar-brand" href="index.html">
              <div class="ms-2 ms-sm-4 d-inline-block">
@@ -12,15 +12,30 @@
             <!-- dropdown -->
             <div class="d-none d-lg-block ms-0">
                 <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                    <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle me-2" href="#" role="button" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside" aria-expanded="false">
                         探索
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu dropdown-menu-neutral-40 mt-6 shadow-sm group first" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><p class="dropdown-header py-3">探索全部</p></li>
+                    <li class="dropend"><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#" data-bs-toggle="dropdown">音樂<i class="bi bi-chevron-right ms-auto"></i></a>
+                        <ul class="dropdown-menu border-0" aria-labelledby="navbarDarkDropdownMenuLink" style="width: 200px;">
+                            <li><a class="dropdown-item" href="#">他怎麼</a></li>
+                            <li><a class="dropdown-item" href="#">沒有辦法</a></li>
+                            <li><a class="dropdown-item" href="#">自己獨立出來咧🫠</a></li>
+                          </ul>
+                    </li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">攝影<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">程式<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">藝術<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">人文<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">行銷<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">投資理財<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">心靈成長<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">職場技能<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">生活品味<i class="bi bi-chevron-right ms-auto"></i></a></li>
                     </ul>
                     </li>
                     </ul>
@@ -29,7 +44,7 @@
 
             <!-- search bar -->
             <div class="d-none d-lg-block">
-                <form class="input-group" role="search" style="max-width: 415px;">
+                <form class="input-group" role="search" style="max-width: 420px;">
                     <label class="search input-group-text search-text text-neutral-60" for="search" style="background-color: transparent;">
                     <i class="bi bi-search me-2 text-dark"></i>
                     搜尋各種音樂、數學、程式及設計課程
@@ -43,15 +58,21 @@
 
             <!-- cart icon -->
             <div class="ms-auto d-flex">
-                <a href="#" class="fs-5 text-neutral-80 d-inline-block"><i class="bi bi-bell"></i></a>
-                <a href="#" class="fs-5 text-neutral-80 d-inline-block ms-3 me-3"><i class="bi bi-cart3"></i></a>
+                <a href="#" class="fs-5 text-neutral-80 d-inline-block position-relative">
+                    <i class="bi bi-bell"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle-x badge border border-light rounded-circle bg-primary p-1"><span class="visually-hidden">unread messages</span></span>
+                </a>
+                <a href="#" class="fs-5 text-neutral-80 d-inline-block ms-4 me-4 position-relative">
+                    <i class="bi bi-cart3"></i>
+                    <span class="position-absolute start-100 translate-middle-x badge border border-light rounded-circle bg-primary m-0" style="top: -2px; padding: 2px 4px;"><p class="mb-0" style="font-size: 12px;">2</p><span class="visually-hidden">unread messages</span></span>
+                </a>
             </div>
 
             <!-- login -->
             <button type="button" class="btn btn-primary me-2 d-none d-lg-block"><a href="#"></a>登入 / 註冊</button>
 
             <!-- rwd navbar-toggler -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
