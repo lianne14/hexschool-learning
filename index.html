@@ -7,14 +7,14 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Learning</title>
-    <script type="module" crossorigin src="/hexschool-learning/assets/main-28e2169a.js"></script>
-    <link rel="stylesheet" href="/hexschool-learning/assets/main-6e299cfe.css">
+    <script type="module" crossorigin src="/hexschool-learning/assets/main-1c0fcca4.js"></script>
+    <link rel="stylesheet" href="/hexschool-learning/assets/main-10eec638.css">
   </head>
   <body>
-    <div class="container mt-4">
-    <nav class="navbar navbar-expand-lg shadow-lg rounded-pill">
+    <div class="container mt-1 mt-lg-4">
+    <nav class="navbar navbar-expand-lg shadow-none shadow-lg-lg rounded-0 rounded-lg-pill">
     <div class="container-fluid">
-        <div class="d-flex align-items-center w-100">
+        <div class="d-flex align-items-center w-100 py-2">
             <!-- logo -->
             <a class="navbar-brand" href="index.html">
              <div class="ms-2 ms-sm-4 d-inline-block">
@@ -25,15 +25,30 @@
             <!-- dropdown -->
             <div class="d-none d-lg-block ms-0">
                 <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                    <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle me-2" href="#" role="button" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside" aria-expanded="false">
                         探索
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu dropdown-menu-neutral-40 mt-6 shadow-sm group first" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><p class="dropdown-header py-3">探索全部</p></li>
+                    <li class="dropend"><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#" data-bs-toggle="dropdown">音樂<i class="bi bi-chevron-right ms-auto"></i></a>
+                        <ul class="dropdown-menu border-0" aria-labelledby="navbarDarkDropdownMenuLink" style="width: 200px;">
+                            <li><a class="dropdown-item" href="#">他怎麼</a></li>
+                            <li><a class="dropdown-item" href="#">沒有辦法</a></li>
+                            <li><a class="dropdown-item" href="#">自己獨立出來咧🫠</a></li>
+                          </ul>
+                    </li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">攝影<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">程式<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">藝術<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">人文<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">行銷<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">投資理財<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">心靈成長<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">職場技能<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">生活品味<i class="bi bi-chevron-right ms-auto"></i></a></li>
                     </ul>
                     </li>
                     </ul>
@@ -42,7 +57,7 @@
 
             <!-- search bar -->
             <div class="d-none d-lg-block">
-                <form class="input-group" role="search" style="max-width: 415px;">
+                <form class="input-group" role="search" style="max-width: 420px;">
                     <label class="search input-group-text search-text text-neutral-60" for="search" style="background-color: transparent;">
                     <i class="bi bi-search me-2 text-dark"></i>
                     搜尋各種音樂、數學、程式及設計課程
@@ -56,15 +71,21 @@
 
             <!-- cart icon -->
             <div class="ms-auto d-flex">
-                <a href="#" class="fs-5 text-neutral-80 d-inline-block"><i class="bi bi-bell"></i></a>
-                <a href="#" class="fs-5 text-neutral-80 d-inline-block ms-3 me-3"><i class="bi bi-cart3"></i></a>
+                <a href="#" class="fs-5 text-neutral-80 d-inline-block position-relative">
+                    <i class="bi bi-bell"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle-x badge border border-light rounded-circle bg-primary p-1"><span class="visually-hidden">unread messages</span></span>
+                </a>
+                <a href="#" class="fs-5 text-neutral-80 d-inline-block ms-4 me-4 position-relative">
+                    <i class="bi bi-cart3"></i>
+                    <span class="position-absolute start-100 translate-middle-x badge border border-light rounded-circle bg-primary m-0" style="top: -2px; padding: 2px 4px;"><p class="mb-0" style="font-size: 12px;">2</p><span class="visually-hidden">unread messages</span></span>
+                </a>
             </div>
 
             <!-- login -->
             <button type="button" class="btn btn-primary me-2 d-none d-lg-block"><a href="#"></a>登入 / 註冊</button>
 
             <!-- rwd navbar-toggler -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -73,7 +94,7 @@
     </nav>
 </div>
     <!-- banner -->
-    <div class="mx-auto py-4 py-lg-10 overflow-hidden sewiperbanner">
+    <div class="mx-auto py-0 py-lg-10 overflow-hidden sewiperbanner">
       <div class="swiper-container-5 position-relative">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -90,7 +111,7 @@
                 </h6>
                 <!-- tittle link -->
                 <button class="btn bg-primary btn-lg text-light rounded-custom-6 w-100 w-lg-auto d-lg-block" type="button">
-                  <h2 class="small fs-lg-3 p-3">探索感興趣的課程，今天立即上課
+                  <h2 class="small fs-lg-3 p-3 mb-0">探索感興趣的課程，今天立即上課
                     <i class="bi bi-arrow-right"></i>
                   </h2>
                 </button>
@@ -112,7 +133,7 @@
                 </h6>
                 <!-- tittle link -->
                 <button class="btn bg-primary btn-lg text-light rounded-custom-6 w-100 w-lg-auto d-lg-block" type="button">
-                  <h2 class="small fs-lg-3 p-3">探索感興趣的課程，今天立即上課
+                  <h2 class="small fs-lg-3 p-3 mb-0">探索感興趣的課程，今天立即上課
                     <i class="bi bi-arrow-right"></i>
                   </h2>
                 </button>
@@ -134,7 +155,7 @@
                 </h6>
                 <!-- tittle link -->
                 <button class="btn bg-primary btn-lg text-light rounded-custom-6 w-100 w-lg-auto d-lg-block" type="button">
-                  <h2 class="small fs-lg-3 p-3">探索感興趣的課程，今天立即上課
+                  <h2 class="small fs-lg-3 p-3 mb-0">探索感興趣的課程，今天立即上課
                     <i class="bi bi-arrow-right"></i>
                   </h2>
                 </button>
@@ -143,8 +164,10 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button-next position-absolute top-50 translate-middle-x bg-primary"></div>
-        <div class="swiper-button-prev position-absolute top-50 translate-middle-x"></div>
+        <div class="d-none d-lg-block">
+        <div class="swiper-button-next position-absolute top-50 translate-middle-x bg-light text-primary  w-auto h-auto shadow-lg rounded-1" style="right: 14%;"></div>
+        <div class="swiper-button-prev position-absolute top-50 translate-middle-x bg-light text-primary  w-auto h-auto shadow-lg rounded-1" style="left: 17%;"></div>
+        </div>
       </div>
     </div>
     <!-- #Block 02 火熱募資課程 -->
@@ -177,8 +200,8 @@
             <button type="button" class="btn btn-lg btn-primary fw-bold my-4 col-lg-5 col-12">更多募資課程</button>
           </div>
           <!-- class card -->
-          <div class="col-12 col-lg-8">
-            <div class="swiper-container overflow-hidden">
+          <div class="col-12 col-lg-8 overflow-hidden">
+            <div class="swiper-container">
               <div class="swiper-wrapper">
               <!-- card 01 -->
               <div class="swiper-slide">
@@ -292,7 +315,7 @@
                 </div>
               </div>
               <!-- card 04 -->
-              <div class="swiper-slide">
+              <div class="swiper-slide pb-6">
                 <div>
                   <div class="card shadow-sm rounded-4 border-5 position-relative">
                     <!-- card-badge -->
@@ -329,15 +352,16 @@
                 </div>
               </div>
              </div>
-             <div class="swiper-pagination position-static my-4"></div>
+             <div class="swiper-pagination position-static my-4 d-block d-lg-none"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- #Block 03 看看大家都買了什麼 -->    
-    <section class="my-12">
-      <div class="container">
+    <section class="py-10 py-lg-12 bg-primary-gradient position-relative">
+      <img src="/hexschool-learning/assets/flower-3-1686dccb.png" alt="flower-3" class="position-absolute top-50 start-0 translate-middle">
+      <div class="container-fluid">
         <!-- tittle -->
         <div class="text-center">
         <h2 class="d-inline-block position-relative">看看大家都買了什麼
@@ -524,192 +548,188 @@
           </div>
         </div> 
         <div class="overflow-hidden">
-        <div class="swiper-container-4">
+        <div class="swiper-container-4" style="min-height: 550px;">
           <div class="swiper-wrapper h-auto d-flex align-items-stretch">
             <!-- card 01 創意寫作工坊：從靈感到出版的全過程 -->
-            <div class="swiper-slide">
-              <div class="h-100" style="min-height: 500px;">
-                <div class="card rounded-4 shadow-sm">
-                  <img src="/hexschool-learning/assets/course-4-e273136f.png" alt="class-create" class="img-fluid w-100 rounded-top-4">
-                  <div class="card-title px-3 my-3">
-                    <h6 class="fw-bold mb-auto">創意寫作工坊：從靈感到出版的全過程</h6>
-                  </div>
-                  <div class="card-body d-flex align-items-center py-0 mb-3">
-                      <img src="/hexschool-learning/assets/avatar-2-1-5b0902ee.png" alt="Kelly Hsu-img" class="rounded-circle object-fit-cover me-2" style="width: 44px; height: 44px;">
-                        <span class="text-neutral-80">Kelly Hsu</span>
+            <div class="swiper-slide h-auto">
+              <div class="card rounded-4 shadow-sm h-100">
+                <!-- card-badge -->
+                <small class="badge rounded-pill position-absolute top-0 bg-danger-10 text-danger py-2 px-3 m-3">限時 8 折 🔥</small>
+                <img src="/hexschool-learning/assets/course-4-e273136f.png" alt="class-create" class="img-fluid w-100 rounded-top-4">
+                <div class="card-title p-3 my-auto">
+                  <h6 class="fw-bold">創意寫作工坊：從靈感到出版的全過程</h6>
+                </div>
+                <div class="card-body d-flex align-items-center py-0 mb-3 flex-grow-0">
+                    <img src="/hexschool-learning/assets/avatar-2-1-5b0902ee.png" alt="Kelly Hsu-img" class="rounded-circle object-fit-cover me-2" style="width: 44px; height: 44px;">
+                    <span class="text-neutral-80">Kelly Hsu</span>
                         
-                        <!-- price -->
-                        <div class="ms-auto text-end">
-                            <h5 class="mb-0 fw-bold text-primary">
-                              NT$ 2,480 
-                            </h5>
-                            <small class="text-neutral-60"><s>NT$ 3,200</s></small>
-                        </div>
+                    <!-- price -->
+                    <div class="ms-auto text-end">
+                      <h6 class="mb-0 fw-bold text-primary">
+                        NT$ 2,480 
+                      </h6>
+                      <small class="text-neutral-60"><s>NT$ 3,200</s></small>
                     </div>
-                  <hr class="p-0 m-0">
-                  <div class="card-footer px-3 my-3">
-                    <div class="d-flex align-items-center">
-                    <div>
-                      <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3">中文創作</small>
-                      <br>
-                      <small class="ms-2">已有 420 位同學加入</small>
-                    </div>
-                    <div class="ms-auto">
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <small>4.0<span class="text-neutral-60"> (333)</span></small>
-                    </div>
+                </div>
+                <hr class="p-0 m-0">
+                <div class="card-footer px-3 my-3">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3 mb-2"> 中文創作 </small>
+                    <br>
+                    <small class="ms-2">已有 420 位同學加入</small>
                   </div>
+                  <div class="ms-auto">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <small>4.0<span class="text-neutral-60"> (333)</span></small>
                   </div>
                 </div>
               </div>
+            </div>
             </div>
             <!-- card 02 小白也會！從零開始學習 Python 程式設計 -->
-            <div class="swiper-slide">
-              <div class="h-100" style="min-height: 500px;">
-                <div class="card rounded-4 shadow-sm">
-                  <img src="/hexschool-learning/assets/course-5-18abd620.png" alt="class-Python" class="img-fluid w-100 rounded-top-4">
-                  <div class="card-title px-3 my-3">
-                    <h6 class="fw-bold mb-auto">小白也會！從零開始學習 Python 程式設計</h6>
-                  </div>
-                  <div class="card-body d-flex align-items-center py-0 mb-3">
-                      <img src="/hexschool-learning/assets/avatar-2-1-5b0902ee.png" alt="Kelly Hsu-img" class="rounded-circle object-fit-cover me-2" style="width: 44px; height: 44px;">
-                        <span class="text-neutral-80">Kelly Hsu</span>
+            <div class="swiper-slide h-auto">
+              <div class="card rounded-4 shadow-sm h-100">
+                <!-- card-badge -->
+                <small class="badge rounded-pill position-absolute top-0 bg-danger-10 text-danger py-2 px-3 m-3">限時 8 折 🔥</small>
+                <img src="/hexschool-learning/assets/course-5-18abd620.png" alt="class-Python" class="img-fluid w-100 rounded-top-4">
+                <div class="card-title p-3 my-auto">
+                  <h6 class="fw-bold">小白也會！從零開始學習 Python 程式設計</h6>
+                </div>
+                <div class="card-body d-flex align-items-center py-0 mb-3 flex-grow-0">
+                    <img src="/hexschool-learning/assets/avatar-2-1-5b0902ee.png" alt="Kelly Hsu-img" class="rounded-circle object-fit-cover me-2" style="width: 44px; height: 44px;">
+                    <span class="text-neutral-80">Kelly Hsu</span>
                         
-                        <!-- price -->
-                        <div class="ms-auto text-end">
-                            <h5 class="mb-0 fw-bold text-primary">
-                              NT$ 2,480 
-                            </h5>
-                            <small class="text-neutral-60"><s>NT$ 3,200</s></small>
-                        </div>
+                    <!-- price -->
+                    <div class="ms-auto text-end">
+                      <h6 class="mb-0 fw-bold text-primary">
+                        NT$ 2,480 
+                      </h6>
+                      <small class="text-neutral-60"><s>NT$ 3,200</s></small>
                     </div>
-                  <hr class="p-0 m-0">
-                  <div class="card-footer px-3 my-3">
-                    <div class="d-flex align-items-center">
-                    <div>
-                      <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3">中文創作</small>
-                      <br>
-                      <small class="ms-2">已有 420 位同學加入</small>
-                    </div>
-                    <div class="ms-auto">
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <small>4.0<span class="text-neutral-60"> (333)</span></small>
-                    </div>
+                </div>
+                <hr class="p-0 m-0">
+                <div class="card-footer px-3 my-3">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3 mb-2"> 程式設計 </small>
+                    <br>
+                    <small class="ms-2">已有 420 位同學加入</small>
                   </div>
+                  <div class="ms-auto">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <small>4.0<span class="text-neutral-60"> (333)</span></small>
                   </div>
                 </div>
               </div>
+            </div>
             </div>
             <!-- card 03 全面掌握 JavaScript 開發技術 -->
-            <div class="swiper-slide">
-              <div class="h-100" style="min-height: 500px;">
-                <div class="card rounded-4 shadow-sm">
-                  <img src="/hexschool-learning/assets/course-6-cb21fd70.png" alt="class-JavaScript" class="img-fluid w-100 rounded-top-4">
-                  <div class="card-title px-3 my-3">
-                    <h6 class="fw-bold mb-auto">全面掌握 JavaScript 開發技術</h6>
-                  </div>
-                  <div class="card-body d-flex align-items-center py-0 mb-3">
-                      <img src="/hexschool-learning/assets/avatar-2-1-5b0902ee.png" alt="Kelly Hsu-img" class="rounded-circle object-fit-cover me-2" style="width: 44px; height: 44px;">
-                        <span class="text-neutral-80">Kelly Hsu</span>
+            <div class="swiper-slide h-auto">
+              <div class="card rounded-4 shadow-sm h-100">
+                <!-- card-badge -->
+                <small class="badge rounded-pill position-absolute top-0 bg-danger-10 text-danger py-2 px-3 m-3">限時 8 折 🔥</small>
+                <img src="/hexschool-learning/assets/course-6-cb21fd70.png" alt="class-JavaScript" class="img-fluid w-100 rounded-top-4">
+                <div class="card-title p-3 my-auto">
+                  <h6 class="fw-bold">全面掌握 JavaScript 開發技術</h6>
+                </div>
+                <div class="card-body d-flex align-items-center py-0 mb-3 flex-grow-0">
+                    <img src="/hexschool-learning/assets/avatar-2-1-5b0902ee.png" alt="Kelly Hsu-img" class="rounded-circle object-fit-cover me-2" style="width: 44px; height: 44px;">
+                    <span class="text-neutral-80">Kelly Hsu</span>
                         
-                        <!-- price -->
-                        <div class="ms-auto text-end">
-                            <h5 class="mb-0 fw-bold text-primary">
-                              NT$ 2,480 
-                            </h5>
-                            <small class="text-neutral-60"><s>NT$ 3,200</s></small>
-                        </div>
+                    <!-- price -->
+                    <div class="ms-auto text-end">
+                      <h6 class="mb-0 fw-bold text-primary">
+                        NT$ 2,480 
+                      </h6>
+                      <small class="text-neutral-60"><s>NT$ 3,200</s></small>
                     </div>
-                  <hr class="p-0 m-0">
-                  <div class="card-footer px-3 my-3">
-                    <div class="d-flex align-items-center">
-                    <div>
-                      <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3">中文創作</small>
-                      <br>
-                      <small class="ms-2">已有 420 位同學加入</small>
-                    </div>
-                    <div class="ms-auto">
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <small>4.0<span class="text-neutral-60"> (333)</span></small>
-                    </div>
+                </div>
+                <hr class="p-0 m-0">
+                <div class="card-footer px-3 my-3">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3 mb-2"> 開發技術 </small>
+                    <br>
+                    <small class="ms-2">已有 420 位同學加入</small>
                   </div>
+                  <div class="ms-auto">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <small>4.0<span class="text-neutral-60"> (333)</span></small>
                   </div>
                 </div>
               </div>
+            </div>
             </div>
             <!-- card 04 HTML & CSS 網頁設計基礎教程 -->
-            <div class="swiper-slide">
-              <div class="h-100" style="min-height: 500px;">
-                <div class="card rounded-4 shadow-sm">
-                  <img src="/hexschool-learning/assets/course-7-9e3876e4.png" alt="class-HTML & CSS" class="img-fluid w-100 rounded-top-4">
-                  <div class="card-title px-3 my-3">
-                    <h6 class="fw-bold mb-auto">HTML & CSS 網頁設計基礎教程</h6>
-                  </div>
-                  <div class="card-body d-flex align-items-center py-0 mb-3">
-                      <img src="/hexschool-learning/assets/avatar-2-1-5b0902ee.png" alt="Kelly Hsu-img" class="rounded-circle object-fit-cover me-2" style="width: 44px; height: 44px;">
-                        <span class="text-neutral-80">Kelly Hsu</span>
+            <div class="swiper-slide h-auto">
+              <div class="card rounded-4 shadow-sm h-100">
+                <img src="/hexschool-learning/assets/course-7-9e3876e4.png" alt="class-HTML & CSS " class="img-fluid w-100 rounded-top-4">
+                <div class="card-title p-3 my-auto">
+                  <h6 class="fw-bold">HTML & CSS 網頁設計基礎教程</h6>
+                </div>
+                <div class="card-body d-flex align-items-center py-0 mb-3 flex-grow-0">
+                    <img src="/hexschool-learning/assets/avatar-2-1-5b0902ee.png" alt="Kelly Hsu-img" class="rounded-circle object-fit-cover me-2" style="width: 44px; height: 44px;">
+                    <span class="text-neutral-80">Kelly Hsu</span>
                         
-                        <!-- price -->
-                        <div class="ms-auto text-end">
-                            <h5 class="mb-0 fw-bold text-primary">
-                              NT$ 2,480 
-                            </h5>
-                            <small class="text-neutral-60"><s>NT$ 3,200</s></small>
-                        </div>
+                    <!-- price -->
+                    <div class="ms-auto text-end">
+                      <h6 class="mb-0 fw-bold text-primary">
+                        NT$ 2,480 
+                      </h6>
+                      <small class="text-neutral-60"><s>NT$ 3,200</s></small>
                     </div>
-                  <hr class="p-0 m-0">
-                  <div class="card-footer px-3 my-3">
-                    <div class="d-flex align-items-center">
-                    <div>
-                      <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3">中文創作</small>
-                      <br>
-                      <small class="ms-2">已有 420 位同學加入</small>
-                    </div>
-                    <div class="ms-auto">
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <small>4.0<span class="text-neutral-60"> (333)</span></small>
-                    </div>
+                </div>
+                <hr class="p-0 m-0">
+                <div class="card-footer px-3 my-3">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3 mb-2"> 網頁設計 </small>
+                    <br>
+                    <small class="ms-2">已有 420 位同學加入</small>
                   </div>
+                  <div class="ms-auto">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <small>4.0<span class="text-neutral-60"> (333)</span></small>
                   </div>
                 </div>
               </div>
             </div>
+            </div>
             <!-- card 05 更進一步！深入學習 Node.js 與後端開發 -->
-            <div class="swiper-slide">
-              <div class="h-100" style="min-height: 500px;">
-                <div class="card rounded-4 shadow-sm">
-                  <img src="/hexschool-learning/assets/course-8-651d7ef2.png" alt="class-Node.js" class="img-fluid w-100 rounded-top-4">
-                  <div class="card-title px-3 my-3">
-                    <h6 class="fw-bold mb-auto">更進一步！深入學習 Node.js 與後端開發</h6>
-                  </div>
-                  <div class="card-body d-flex align-items-center py-0 mb-3">
-                      <img src="/hexschool-learning/assets/avatar-2-1-5b0902ee.png" alt="Kelly Hsu-img" class="rounded-circle object-fit-cover me-2" style="width: 44px; height: 44px;">
-                        <span class="text-neutral-80">Kelly Hsu</span>
+            <div class="swiper-slide h-auto">
+              <div class="card rounded-4 shadow-sm h-100">
+                <img src="/hexschool-learning/assets/course-8-651d7ef2.png" alt="class-Node.js" class="img-fluid w-100 rounded-top-4">
+                <div class="card-title p-3 my-auto">
+                  <h6 class="fw-bold">更進一步！深入學習 Node.js 與後端開發</h6>
+                </div>
+                <div class="card-body d-flex align-items-center py-0 mb-3 flex-grow-0">
+                    <img src="/hexschool-learning/assets/avatar-2-1-5b0902ee.png" alt="Kelly Hsu-img" class="rounded-circle object-fit-cover me-2" style="width: 44px; height: 44px;">
+                    <span class="text-neutral-80">Kelly Hsu</span>
                         
-                        <!-- price -->
-                        <div class="ms-auto text-end">
-                            <h5 class="mb-0 fw-bold text-primary">
-                              NT$ 2,480 
-                            </h5>
-                            <small class="text-neutral-60"><s>NT$ 3,200</s></small>
-                        </div>
+                    <!-- price -->
+                    <div class="ms-auto text-end">
+                      <h6 class="mb-0 fw-bold text-primary">
+                        NT$ 2,480 
+                      </h6>
+                      <small class="text-neutral-60"><s>NT$ 3,200</s></small>
                     </div>
-                  <hr class="p-0 m-0">
-                  <div class="card-footer px-3 my-3">
-                    <div class="d-flex align-items-center">
-                    <div>
-                      <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3">中文創作</small>
-                      <br>
-                      <small class="ms-2">已有 420 位同學加入</small>
-                    </div>
-                    <div class="ms-auto">
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <small>4.0<span class="text-neutral-60"> (333)</span></small>
-                    </div>
+                </div>
+                <hr class="p-0 m-0">
+                <div class="card-footer px-3 my-3">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <small class="badge rounded-pill bg-neutral-40 text-dark py-2 px-3 mb-2"> 後端開發 </small>
+                    <br>
+                    <small class="ms-2">已有 420 位同學加入</small>
                   </div>
+                  <div class="ms-auto">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <small>4.0<span class="text-neutral-60"> (333)</span></small>
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -717,7 +737,7 @@
       </div>
     </section>
     <!-- #Block 04 想學什麼嗎？一探究竟。 -->
-    <section class="my-12">
+    <section class="my-10 my-lg-12">
       <div class="container-fluid" style="max-width: 1656px;">
         <!-- blue board -->
         <div class="bg-primary rounded-5">
@@ -964,7 +984,8 @@
       </div>
     </section>
     <!-- #Block 05 頂尖講師帶你飛 -->
-    <section class="my-12">
+    <section class="my-10 my-lg-12 position-relative">
+      <img src="/hexschool-learning/assets/line-1-caf4a397.png" alt="" class="img-fluid position-absolute top-15 w-auto h-auto z-n1">
       <div class="container">
         <!-- tittle -->
         <div class="text-center">
@@ -979,7 +1000,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-2 py-10">
           <!-- teacher01 Mr. Robert  -->
           <div class="col">
-            <div class="card mx-auto" style="max-width: 416px;">
+            <div class="card mx-auto" style="max-width: 416px; background-color: initial;">
               <img src="/hexschool-learning/assets/teacher-3-28b5c93a.png" class="card-img-top w-auto object-fit-cover ms-10" alt="...">
               <div class="card-body w-auto bg-light rounded-4 shadow-lg me-6 z-1" style="margin-top: -80px; max-width: 384px;">
                 <h5 class="card-tittle py-5 fw-bold">
@@ -997,7 +1018,7 @@
           </div>
           <!-- teacher02 Kelly Beck  -->
           <div class="col">
-            <div class="card mx-auto h-100" style="max-width: 416px;">
+            <div class="card mx-auto h-100" style="max-width: 416px; background-color: initial;">
               <img src="/hexschool-learning/assets/teacher-1-7be33f19.png" class="card-img-top bg-none w-auto object-fit-cover ms-10" alt="...">
               <div class="card-body w-auto bg-light rounded-4 shadow-lg me-6 z-1" style="margin-top: -80px; max-width: 384px;">
                 <h5 class="card-tittle py-5 fw-bold">
@@ -1015,7 +1036,7 @@
           </div>
           <!-- teacher03 K. Lee  -->
           <div class="col">
-            <div class="card mx-auto h-100" style="max-width: 416px;">
+            <div class="card mx-auto h-100" style="max-width: 416px; background-color: initial;">
               <img src="/hexschool-learning/assets/teacher-2-8d68dd20.png" class="card-img-top bg-none w-auto object-fit-cover ms-10" alt="...">
               <div class="card-body w-auto bg-light rounded-4 shadow-lg me-6 d-flex flex-column" style="margin-top: -80px; max-width: 384px;">
                 <h5 class="card-tittle py-5 fw-bold">
@@ -1042,7 +1063,7 @@
             <div class="swiper-wrapper"> 
               <div class="swiper-slide">
                 <div class="col">
-                  <div class="card mx-auto" style="max-width: 416px;">
+                  <div class="card mx-auto" style="max-width: 416px; background-color: initial;">
                     <img src="/hexschool-learning/assets/teacher-3-28b5c93a.png" class="card-img-top w-auto object-fit-cover ms-10" alt="...">
                     <div class="card-body w-auto bg-light rounded-4 shadow-lg me-6 z-1" style="margin-top: -80px; max-width: 384px;">
                       <h5 class="card-tittle py-5 fw-bold">
@@ -1061,7 +1082,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="col">
-                  <div class="card mx-auto h-100" style="max-width: 416px;">
+                  <div class="card mx-auto h-100" style="max-width: 416px; background-color: initial;">
                     <img src="/hexschool-learning/assets/teacher-1-7be33f19.png" class="card-img-top bg-none w-auto object-fit-cover ms-10" alt="...">
                     <div class="card-body w-auto bg-light rounded-4 shadow-lg me-6 z-1" style="margin-top: -80px; max-width: 384px;">
                       <h5 class="card-tittle py-5 fw-bold">
@@ -1080,7 +1101,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="col">
-                  <div class="card mx-auto h-100" style="max-width: 416px;">
+                  <div class="card mx-auto h-100" style="max-width: 416px; background-color: initial;">
                     <img src="/hexschool-learning/assets/teacher-2-8d68dd20.png" class="card-img-top bg-none w-auto object-fit-cover ms-10" alt="...">
                     <div class="card-body w-auto bg-light rounded-4 shadow-lg me-6 d-flex flex-column" style="margin-top: -80px; max-width: 384px;">
                       <h5 class="card-tittle py-5 fw-bold">
@@ -1134,7 +1155,8 @@
 </footer>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    
+    <!-- banner -->
     <script>
       var swiper5 = new Swiper(".swiper-container-5", {
         effect: "slide",
@@ -1182,8 +1204,9 @@
     <script>
       var swiper4 = new Swiper(".swiper-container-4", {
         slidesPerView: "auto",
-        centeredSlides: false,
         spaceBetween: 30,
+        centeredSlides: true,
+        initialSlide: 1,
         pagination: {
         el: ".swiper-pagination",
         clickable: true,
