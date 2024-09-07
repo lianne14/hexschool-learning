@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Learning</title>
-    <script type="module" crossorigin src="/hexschool-learning/assets/main-1c0fcca4.js"></script>
-    <link rel="stylesheet" href="/hexschool-learning/assets/main-10eec638.css">
+    <script type="module" crossorigin src="/hexschool-learning/assets/main-3f425e06.js"></script>
+    <link rel="stylesheet" href="/hexschool-learning/assets/main-bd6e64aa.css">
   </head>
   <body>
     <div class="container mt-1 mt-lg-4">
@@ -83,10 +85,35 @@
             <button type="button" class="btn btn-primary me-2 d-none d-lg-block"><a href="#"></a>登入 / 註冊</button>
 
             <!-- rwd navbar-toggler -->
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="d-block d-lg-none">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <div class="offcanvas offcanvas-end pt-3" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header border-bottom border-1 position-relative">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">探索全部</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    <ul class="list-unstyled">
+                        <li class="dropend"><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#" data-bs-toggle="dropdown">音樂<i class="bi bi-chevron-right ms-auto"></i></a>
+                        </li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">攝影<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">程式<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">藝術<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">人文<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">行銷<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">投資理財<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">心靈成長<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">職場技能<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">生活品味<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-primary me-2 w-100 position-sticky"><a href="#"></a>登入 / 註冊</button>
+                </div>
+              </div>
+            </div>  
       </div>
       </div>
     </nav>
@@ -97,7 +124,7 @@
         <div class="col-12 col-lg-6 mx-auto p-10 justify-content-center">
           <div class="d-flex align-items-center">
             <div>
-            <i class="bi bi-check2 text-light bg-success fs-4 rounded-circle p-2 w-auto h-auto me-7"></i>
+            <i class="bi bi-check2 text-light bg-success fs-4 rounded-circle p-1 px-2 w-auto h-auto me-4"></i>
             </div>
             <h1 class="fw-bold">
               恭喜，Jessica！<br>
@@ -117,7 +144,7 @@
       </div>
     </section>
 
-    <section class="container">
+    <section class="container my-4">
       <!-- tittle -->
       <div class="d-flex">
         <picture>
@@ -125,7 +152,6 @@
         </picture>
         <h4 class="position-relative">更多程式學習相關課程</h4>
       </div>
-
       <!-- swiper -->
       <div class="overflow-hidden">
         <div class="swiper-container-4" style="min-height: 550px;">
@@ -301,9 +327,9 @@
         <small class="text-light">copyright © 2024 LEARNING 課程網站 All Rights Reserved.</small>
         <ul class="list-unstyled ms-lg-auto mb-0">
           <div class="d-flex">
-            <li class="p-2 ps-0"><a href="#" class="border border-1 border-light p-1 rounded-circle"><i class="bi bi-line text-light"></i></a></li>
-            <li class="p-2"><a href="#" class="border border-1 border-light p-1 rounded-circle"><i class="bi bi-youtube text-light"></i></a></li>
-            <li class="p-2 pe-0"><a href="#" class="border border-1 border-light p-1 rounded-circle"><i class="bi bi-meta text-light"></i></a></li>
+            <li class="p-2 ps-0"><a href="#" class="border border-1 border-light p-1 px-2 rounded-circle"><i class="bi bi-line text-light"></i></a></li>
+            <li class="p-2"><a href="#" class="border border-1 border-light p-1 px-2 rounded-circle"><i class="bi bi-youtube text-light"></i></a></li>
+            <li class="p-2 pe-0"><a href="#" class="border border-1 border-light p-1 px-2 rounded-circle"><i class="bi bi-meta text-light"></i></a></li>
           </div>
         </ul>
     </div>
@@ -316,22 +342,20 @@
     <!-- #Block 03 看看大家都買了什麼 -->  
     <script>
       var swiper4 = new Swiper(".swiper-container-4", {
-        slidesPerView: "auto",
+        slidesPerView: "1",
         spaceBetween: 30,
-        pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        },
         breakpoints: { // 響應式設置
-          320: {
-          slidesPerView: 1, // 手機版顯示 1 張
-          },
-          768: {
+          640: {
             slidesPerView: 1.5, // 在大於等於 768px 的設備上顯示 2 個滑塊
+          },
+
+          1024: {
+            slidesPerView: 3.5, // 在大於等於 768px 的設備上顯示 2 個滑塊
           }
         }
       });
-    </script>    
+    </script>
+     
     
     
   </body>

@@ -7,8 +7,8 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Learning</title>
-    <script type="module" crossorigin src="/hexschool-learning/assets/main-1c0fcca4.js"></script>
-    <link rel="stylesheet" href="/hexschool-learning/assets/main-10eec638.css">
+    <script type="module" crossorigin src="/hexschool-learning/assets/main-3f425e06.js"></script>
+    <link rel="stylesheet" href="/hexschool-learning/assets/main-bd6e64aa.css">
   </head>
   <body>
     <div class="container mt-1 mt-lg-4">
@@ -85,10 +85,35 @@
             <button type="button" class="btn btn-primary me-2 d-none d-lg-block"><a href="#"></a>登入 / 註冊</button>
 
             <!-- rwd navbar-toggler -->
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="d-block d-lg-none">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <div class="offcanvas offcanvas-end pt-3" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header border-bottom border-1 position-relative">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">探索全部</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    <ul class="list-unstyled">
+                        <li class="dropend"><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#" data-bs-toggle="dropdown">音樂<i class="bi bi-chevron-right ms-auto"></i></a>
+                        </li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">攝影<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">程式<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">藝術<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">人文<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">行銷<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">投資理財<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">心靈成長<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">職場技能<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                        <li><a class="dropdown-item d-flex px-3 py-4 text-neutral-80" href="#">生活品味<i class="bi bi-chevron-right ms-auto"></i></a></li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-primary me-2 w-100 position-sticky"><a href="#"></a>登入 / 註冊</button>
+                </div>
+              </div>
+            </div>  
       </div>
       </div>
     </nav>
@@ -171,7 +196,7 @@
       </div>
     </div>
     <!-- #Block 02 火熱募資課程 -->
-    <section class="my-10 my-lg-12">
+    <section class="my-10">
       <div class="container">
         <div class="row my-5">
           <div class="col-12 col-lg-4">
@@ -197,12 +222,12 @@
               <button type="button" class="btn btn-light border-neutral-40 text-dark my-2 me-2 rounded-2">🖌️ 藝術創作</button>
             </div>
             <!-- btn-lg 更多募資課程  -->
-            <button type="button" class="btn btn-lg btn-primary fw-bold my-4 col-lg-5 col-12">更多募資課程</button>
+            <button type="button" class="btn btn-lg btn-primary fw-bold my-4 col-lg-5 col-12 d-none d-lg-block">更多募資課程</button>
           </div>
           <!-- class card -->
           <div class="col-12 col-lg-8 overflow-hidden">
             <div class="swiper-container">
-              <div class="swiper-wrapper">
+              <div class="swiper-wrapper pt-6">
               <!-- card 01 -->
               <div class="swiper-slide">
                 <div>
@@ -230,9 +255,9 @@
                         </div>
                         <!-- price -->
                         <div class="d-flex align-items-center">
-                          <h5 class="mb-0 me-2 fw-bold">
+                          <h6 class="fw-bold mb-0 me-2">
                             NT$ 2,480 
-                          </h5>
+                          </h6>
                           <small class="text-neutral-60"><s>NT$ 3,200</s></small>
                         </div>
                       </div>
@@ -267,9 +292,9 @@
                         </div>
                         <!-- price -->
                         <div class="d-flex align-items-center">
-                          <h5 class="mb-0 me-2 fw-bold">
+                          <h6 class="fw-bold mb-0 me-2">
                             NT$ 1,680
-                          </h5>
+                          </h6>
                           <small class="text-neutral-60"><s>NT$ 2,980</s></small>
                         </div>
                       </div>
@@ -304,9 +329,9 @@
                       </div>
                       <!-- price -->
                       <div class="d-flex align-items-center">
-                        <h5 class="mb-0 me-2 fw-bold">
+                        <h6 class="fw-bold mb-0 me-2">
                           NT$ 2,680
-                        </h5>
+                        </h6>
                         <small class="text-neutral-60"><s>NT$ 3,200</s></small>
                       </div>
                     </div>
@@ -315,7 +340,7 @@
                 </div>
               </div>
               <!-- card 04 -->
-              <div class="swiper-slide pb-6">
+              <div class="swiper-slide pb-0 pb-lg-6">
                 <div>
                   <div class="card shadow-sm rounded-4 border-5 position-relative">
                     <!-- card-badge -->
@@ -341,9 +366,9 @@
                         </div>
                         <!-- price -->
                         <div class="d-flex align-items-center">
-                          <h5 class="mb-0 me-2 fw-bold">
+                          <h6 class="fw-bold mb-0 me-2">
                             NT$ 1,980
-                          </h5>
+                          </h6>
                           <small class="text-neutral-60"><s>NT$ 3,200</s></small>
                         </div>
                       </div>
@@ -354,12 +379,13 @@
              </div>
              <div class="swiper-pagination position-static my-4 d-block d-lg-none"></div>
             </div>
+            <button type="button" class="btn btn-lg btn-primary fw-bold my-4 col-lg-5 col-12  d-block d-lg-none">更多募資課程</button>
           </div>
         </div>
       </div>
     </section>
     <!-- #Block 03 看看大家都買了什麼 -->    
-    <section class="py-10 py-lg-12 bg-primary-gradient position-relative">
+    <section class="pt-10 py-lg-12 bg-primary-gradient position-relative">
       <img src="/hexschool-learning/assets/flower-3-1686dccb.png" alt="flower-3" class="position-absolute top-50 start-0 translate-middle">
       <div class="container-fluid">
         <!-- tittle -->
@@ -731,6 +757,11 @@
               </div>
             </div>
             </div>
+          </div>
+          <div class="swiper-pagination position-static my-4 d-block d-sm-none"></div>
+          <div class="d-none d-lg-block">
+            <div class="swiper-button-next position-absolute top-50 translate-middle-x bg-primary text-light w-auto h-auto shadow-lg rounded-1" style="right: 5%;"></div>
+            <div class="swiper-button-prev position-absolute top-50 translate-middle-x bg-light text-primary w-auto h-auto shadow-lg rounded-1" style="left: 8%;"></div>
           </div>
         </div>
         </div>
@@ -1144,9 +1175,9 @@
         <small class="text-light">copyright © 2024 LEARNING 課程網站 All Rights Reserved.</small>
         <ul class="list-unstyled ms-lg-auto mb-0">
           <div class="d-flex">
-            <li class="p-2 ps-0"><a href="#" class="border border-1 border-light p-1 rounded-circle"><i class="bi bi-line text-light"></i></a></li>
-            <li class="p-2"><a href="#" class="border border-1 border-light p-1 rounded-circle"><i class="bi bi-youtube text-light"></i></a></li>
-            <li class="p-2 pe-0"><a href="#" class="border border-1 border-light p-1 rounded-circle"><i class="bi bi-meta text-light"></i></a></li>
+            <li class="p-2 ps-0"><a href="#" class="border border-1 border-light p-1 px-2 rounded-circle"><i class="bi bi-line text-light"></i></a></li>
+            <li class="p-2"><a href="#" class="border border-1 border-light p-1 px-2 rounded-circle"><i class="bi bi-youtube text-light"></i></a></li>
+            <li class="p-2 pe-0"><a href="#" class="border border-1 border-light p-1 px-2 rounded-circle"><i class="bi bi-meta text-light"></i></a></li>
           </div>
         </ul>
     </div>
@@ -1203,18 +1234,19 @@
     <!-- #Block 03 看看大家都買了什麼 -->  
     <script>
       var swiper4 = new Swiper(".swiper-container-4", {
-        slidesPerView: "auto",
+        slidesPerView: "1",
         spaceBetween: 30,
         centeredSlides: true,
         initialSlide: 1,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
         pagination: {
         el: ".swiper-pagination",
         clickable: true,
         },
         breakpoints: { // 響應式設置
-          320: {
-          slidesPerView: 1.5, // 手機版顯示 1 張
-          },
           768: {
             slidesPerView: 3.5, // 在大於等於 768px 的設備上顯示 2 個滑塊
           }
