@@ -19,9 +19,9 @@
     position: absolute;
     height: 100%; 
     animation-name: progress-xl; 
-    animation-duration: 2s;
+    animation-duration: 0.8s;
     animation-fill-mode: both;
-    animation-delay: 1s;
+    animation-delay: 3.5s;
 }
 
 @keyframes progress-full{
@@ -40,9 +40,9 @@
     position: absolute;
     height: 100%; 
     animation-name: progress-full; 
-    animation-duration: 2s;
+    animation-duration: 0.8s;
     animation-fill-mode: both;
-    animation-delay: 1s;
+    animation-delay: 3.5s;
 }
 
 @keyframes progress-l{
@@ -61,7 +61,7 @@
     position: absolute;
     height: 100%; 
     animation-name: progress-l; 
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: both;
-    animation-delay: 1s;
+    animation-delay: 3.5s;
 }
