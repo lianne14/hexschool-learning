@@ -41,8 +41,8 @@ $utilities: map-merge(
 
 @import "./components/rounded";
 @import "./components/gradient";
-@import "./components/transform";
-@import "./components/keyframes";
+@import "./components/animation";
+@import "./components/swiperbutton";
 
 @import './layout/header.scss';
 @import './layout/footer.scss';

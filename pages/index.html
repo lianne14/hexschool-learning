@@ -114,7 +114,7 @@
               <button type="button" class="btn btn-light border-neutral-40 text-dark my-2 me-2 rounded-2">🖌️ 藝術創作</button>
             </div>
             <!-- btn-lg 更多募資課程  -->
-            <button type="button" class="btn btn-lg btn-primary fw-bold my-4 col-lg-5 col-12 d-none d-lg-block">更多募資課程</button>
+            <button type="button" class="btn btn-lg btn-primary fw-bold my-4 col-lg-5 col-12 d-none d-lg-block"><p class="transform-y mb-0">更多募資課程</p></button>
           </div>
           <!-- class card -->
           <div class="col-12 col-lg-8 overflow-hidden">
@@ -278,7 +278,7 @@
     </section>
     <!-- #Block 03 看看大家都買了什麼 -->    
     <section class="pt-10 py-lg-12 bg-primary-gradient position-relative">
-      <img src="../assets/images/deco/flower-3.png" alt="flower-3" class="position-absolute top-50 start-0 translate-middle">
+      <img src="../assets/images/deco/flower-3.png" alt="flower-3" class="position-absolute top-50 start-0 translate-middle transform-rotate">
       <div class="container-fluid">
         <!-- tittle -->
         <div class="text-center">
@@ -466,10 +466,10 @@
           </div>
         </div> 
         <div class="overflow-hidden">
-        <div class="swiper-container-4" style="min-height: 550px;">
+        <div class="swiper-container-4 py-5" style="min-height: 550px;">
           <div class="swiper-wrapper h-auto d-flex align-items-stretch">
             <!-- card 01 創意寫作工坊：從靈感到出版的全過程 -->
-            <div class="swiper-slide h-auto">
+            <div class="swiper-slide h-auto transform-y">
               <div class="card rounded-4 shadow-sm h-100">
                 <!-- card-badge -->
                 <small class="badge rounded-pill position-absolute top-0 bg-danger-10 text-danger py-2 px-3 m-3">限時 8 折 🔥</small>
@@ -506,7 +506,7 @@
             </div>
             </div>
             <!-- card 02 小白也會！從零開始學習 Python 程式設計 -->
-            <div class="swiper-slide h-auto">
+            <div class="swiper-slide h-auto transform-y">
               <div class="card rounded-4 shadow-sm h-100">
                 <!-- card-badge -->
                 <small class="badge rounded-pill position-absolute top-0 bg-danger-10 text-danger py-2 px-3 m-3">限時 8 折 🔥</small>
@@ -543,7 +543,7 @@
             </div>
             </div>
             <!-- card 03 全面掌握 JavaScript 開發技術 -->
-            <div class="swiper-slide h-auto">
+            <div class="swiper-slide h-auto transform-y">
               <div class="card rounded-4 shadow-sm h-100">
                 <!-- card-badge -->
                 <small class="badge rounded-pill position-absolute top-0 bg-danger-10 text-danger py-2 px-3 m-3">限時 8 折 🔥</small>
@@ -580,7 +580,7 @@
             </div>
             </div>
             <!-- card 04 HTML & CSS 網頁設計基礎教程 -->
-            <div class="swiper-slide h-auto">
+            <div class="swiper-slide h-auto transform-y">
               <div class="card rounded-4 shadow-sm h-100">
                 <img src="../assets/images/course-7.png" alt="class-HTML & CSS " class="img-fluid w-100 rounded-top-4">
                 <div class="card-title p-3 my-auto">
@@ -615,7 +615,7 @@
             </div>
             </div>
             <!-- card 05 更進一步！深入學習 Node.js 與後端開發 -->
-            <div class="swiper-slide h-auto">
+            <div class="swiper-slide h-auto transform-y">
               <div class="card rounded-4 shadow-sm h-100">
                 <img src="../assets/images/course-8.png" alt="class-Node.js" class="img-fluid w-100 rounded-top-4">
                 <div class="card-title p-3 my-auto">
@@ -668,7 +668,7 @@
             <div class="col-12 col-lg-5">
               <div class="d-block d-lg-flex mx-auto">
                 <picture>
-                  <img src="../assets/images/deco/polygon-1.png" alt="polygon" class="img-fluid">
+                  <img src="../assets/images/deco/polygon-1.png" alt="polygon" class="img-fluid flower-rotate-animation">
                 </picture>
                 <div class="text-light ms-2">
                 <h1>
@@ -1063,6 +1063,10 @@
         slidesPerView: "auto",
         spaceBetween: 24, 
         initialSlide: 1,
+        autoplay: {
+          delay: 4000, 
+          disableOnInteraction: true, 
+        },
         navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -1105,6 +1109,10 @@
         spaceBetween: 30,
         centeredSlides: true,
         initialSlide: 1,
+        autoplay: {
+          delay: 2000, 
+          disableOnInteraction: true, 
+        },
         navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

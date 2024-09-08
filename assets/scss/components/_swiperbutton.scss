@@ -1,0 +1,15 @@
+.swiper-button-next:after {
+    font-family: 'bootstrap-icons';
+    content: '\F138';
+    transform: scale(0.5);
+}
+.swiper-button-prev:after {
+    font-family: 'bootstrap-icons';
+    content: '\F12F';
+    transform: scale(0.5);
+}  
+
+.swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 20px;
+}

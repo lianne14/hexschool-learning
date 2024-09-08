@@ -1,3 +1,27 @@
+.transform-y{
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: translateY(-5px); 
+      }
+}
+//rotate
+@keyframes rotate{
+    0%{
+    transform: rotate(0deg);
+    }
+    100%{
+    transform: rotate(360deg);
+    }
+}
+.flower-rotate-animation{
+    animation: rotate 1.8s ease-in-out infinite;
+}
+
+// progress
+.progress-container {
+    position: relative; 
+    width: 100%; 
+}
 @keyframes progress-xl{
     0%{
     right: 100%;
@@ -9,19 +33,11 @@
     right: 18%;
     }
 }
-
-.progress-container {
-    position: relative; 
-    width: 100%; 
-  }
-  
 .progress-animation-xl {
     position: absolute;
     height: 100%; 
     animation-name: progress-xl; 
-    animation-duration: 0.8s;
-    animation-fill-mode: both;
-    animation-delay: 3.5s;
+    animation: progress-xl 0.8s 3.5s both;
 }
 
 @keyframes progress-full{
@@ -35,16 +51,11 @@
     right: 0%;
     }
 }
-  
 .progress-animation-full {
     position: absolute;
     height: 100%; 
-    animation-name: progress-full; 
-    animation-duration: 0.8s;
-    animation-fill-mode: both;
-    animation-delay: 3.5s;
+    animation: progress-full 0.8s 3.5s both;
 }
-
 @keyframes progress-l{
     0%{
     right: 100%;
@@ -56,12 +67,8 @@
     right: 27%;
     }
 }
-  
 .progress-animation-l {
     position: absolute;
     height: 100%; 
-    animation-name: progress-l; 
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-delay: 3.5s;
+    animation: progress-l 1s 3.5s both;
 }
